@@ -1,13 +1,198 @@
-# React + Vite
+# 🏎️ Toyota Supra MK4 (JDM) — 3D Cyberpunk Configurator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+[![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Three.js](https://img.shields.io/badge/Three.js-r185-000000?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
+[![React Three Fiber](https://img.shields.io/badge/R3F-9.7.0-white?style=for-the-badge&logo=react&logoColor=black)](https://docs.pmnd.rs/react-three-fiber/)
+[![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Интерактивный 3D-конфигуратор легендарной Toyota Supra (JZA80) в стиле Cyberpunk / Neo-Tokyo с поддержкой физики света, звука мотора 2JZ-GTE и живой телеметрии.**
 
-## Expanding the ESLint configuration
+[✨ Возможности](#-возможности) • [🎮 Управление](#-управление-и-горячие-клавиши) • [🛠️ Стек технологий](#️-стек-технологий) • [🚀 Быстрый старт](#-быстрый-старт) • [📁 Структура](#-структура-проекта) • [🌐 Локализация](#-локализация)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# jdm-mycar
+---
+
+</div>
+
+## 🌟 Обзор проекта
+
+**Toyota Supra JDM 3D Configurator** — это высокопроизводительное веб-приложение, созданное на базе **React 19**, **Three.js** и **React Three Fiber**. Проект позволяет пользователю в реальном времени кастомизировать культовый японский спорткар Toyota Supra MK IV, настраивать материалы кузова, дисков, салона и неоновой подсветки, переключаться между атмосферными локациями, исследовать интерактивные хотспоты и слушать рёв легендарного твин-турбо двигателя **2JZ-GTE** с живой шкалой наддува и тахометром.
+
+---
+
+## ✨ Возможности
+
+### 🎨 1. Детальная 3D-кастомизация в реальном времени
+- **Кузов и ЛКП**: палитра аутентичных и кастомных цветов (Shikkoku Black, Super White 040, Renaissance Red, Midnight Purple III, Tokyo Cyber Lime, HKS Purple и др.).
+- **Типы покрытия**: Metallic, Gloss, Matte, Pearlescent с реалистичными шейдерами шероховатости, металличности и прозрачного лака (*Clearcoat*).
+- **Колёсные диски**: культовые стили (TE37 Bronze, Gloss Black, Silver Chrome, Gold Race).
+- **Тормозные суппорты**: спортивные акценты (Brembo Red, Acid Green, Endless Blue, Racing Gold, Yellow).
+- **Интерьер и салон**: кожаная отделка (Kyoto Crimson, Pure Black, Tan Leather, Ivory White).
+- **Неоновая подсветка днища (Underglow)**: Tokyo Cyan, Osaka Magenta, Shibuya Purple, Lime Green с динамическим освещением асфальта.
+- **Оптика**: переключение фар и фонарей с динамическими конусами света и эффектом свечения.
+
+### 🏙️ 2. Локации и кинематографичность
+- **3 тематические локации**:
+  - 🌃 **Wangan Highway** — ночная скоростная магистраль Токио в стиле нео-киберпанк.
+  - 🌸 **Kyoto Night** — атмосферный ночной Киото с цветущей сакурой и неоновыми фонарями.
+  - ⚡ **Neo Tokyo Studio** — футуристичная студия со световыми акцентами.
+- **Пресеты камеры**: Hero 3/4, Профиль (Side), Кокпит / Салон (Cockpit), Фронтальный (Front), Вид сзади (Rear).
+- **Интерактивные 3D-хотспоты**: точки интереса на капоте (2JZ-GTE), дисках Rays TE37, интерьере и выхлопной системе с плавным зумом.
+- **Кинематографический режим (Cinematic Mode)**: скрытие интерфейса, широкоэкранные полосы (letterbox) и плавный авто-облёт камеры.
+
+### 🔊 3. Аудиодвижок 2JZ-GTE и HUD-телеметрия
+- **Web Audio API Engine**: реалистичный звук перегазовки твин-турбо мотора 2JZ с плавными экспоненциальными огибающими громкости без щелчков.
+- **Цифровой тахометр**: шкала оборотов в реальном времени (до 8000+ RPM) со световой индикацией отсечки (Shift Light).
+- **Датчик давления турбины (Boost Gauge)**: динамический датчик наддува в барах.
+- **Микровибрации кузова**: визуальная отдача и вибрация модели при нажатии на газ.
+
+### 📊 4. Информационные панели и модули
+- 🏁 **Каталог модификаций**: Supra RZ (Twin-Turbo), SZ-R, заводская TRD 3000GT (JGTC GT500) и легендарная Top Secret V12 Смоки Нагаты.
+- ⚙️ **Технический формуляр (Tuning & Specs)**: подробные характеристики мотора 2JZ-GTE, трансмиссии Getrag V160, тормозной системы и динамики (0-100 км/ч, 1/4 мили).
+- 📜 **История поколений (Heritage)**: полная хронология развития линейки Supra (A40, A60, A70, A80, A90).
+- 📋 **Спецификация сборки (Summary)**: итоговый паспорт кастомизации с возможностью экспорта / печати конфигурации.
+
+---
+
+## 🎮 Управление и горячие клавиши
+
+| Действие / Клавиша | Описание |
+| :--- | :--- |
+| <kbd>Пробел</kbd> / <kbd>W</kbd> | **Газ / Перегазовка** (раскрутка 2JZ мотора, наддув турбины и звук) |
+| <kbd>Esc</kbd> | Выход из кинематографического режима / Закрытие модальных окон |
+| **ЛКМ + Перетаскивание** | Свободное вращение камеры вокруг автомобиля |
+| **ПКМ + Перетаскивание** | Панорамирование камеры |
+| **Колесо мыши** | Приближение / отдаление (Zoom) |
+| **Клик по хотспоту 3D** | Автоматический плавный фокус камеры на узле автомобиля |
+
+---
+
+## 🌐 Локализация
+
+Приложение полностью переведено на 3 языка:
+- 🇷🇺 **Русский (RU)**
+- 🇬🇧 **English (EN)**
+- 🇯🇵 **日本語 (JA)**
+
+Переключение языка доступно в один клик в правом верхнем углу интерфейса.
+
+---
+
+## 🛠️ Стек технологий
+
+- **Фреймворк**: [React 19](https://react.dev/)
+- **Сборщик**: [Vite 6](https://vitejs.dev/)
+- **3D Графика**: [Three.js](https://threejs.org/) + [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/) + [@react-three/drei](https://github.com/pmndrs/drei)
+- **Анимации**: [@react-spring/three](https://www.react-spring.dev/)
+- **Иконки**: [Lucide React](https://lucide.dev/)
+- **Звук**: Web Audio API (кастомный хук `useAudioEngine`)
+- **Стилизация**: Custom Cyberpunk Glassmorphism UI (CSS3, CSS Variables, Responsive Layout)
+- **Шрифты**: Montserrat, Orbitron, Syne, Noto Sans JP
+
+---
+
+## 🚀 Быстрый старт
+
+### Требования
+- [Node.js](https://nodejs.org/) (версия 18.0 или новее)
+- `npm` или `yarn` / `pnpm`
+
+### Установка и запуск
+
+1. **Клонируйте репозиторий**:
+   ```bash
+   git clone https://github.com/pixel-yerzat/jdm-mycar.git
+   cd jdm-mycar
+   ```
+
+2. **Установите зависимости**:
+   ```bash
+   npm install
+   ```
+
+3. **Запустите сервер разработки**:
+   ```bash
+   npm run dev
+   ```
+   Откройте [http://localhost:5173](http://localhost:5173) в браузере.
+
+4. **Сборка для продакшена**:
+   ```bash
+   npm run build
+   ```
+
+5. **Предварительный просмотр продакшен-сборки**:
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## 📁 Структура проекта
+
+```text
+├── public/
+│   ├── favicon.png             # Иконка сайта
+│   ├── model/
+│   │   └── supra.glb           # Оптимизированная 3D-модель Toyota Supra
+│   └── sound/
+│       └── supra_sound.mp3     # Высококачественный семпл звука 2JZ-GTE
+├── src/
+│   ├── assets/                 # Статические графические ассеты
+│   ├── components/
+│   │   ├── 3d/                 # Компоненты 3D-сцены Three.js / R3F
+│   │   │   ├── CameraRig.jsx       # Плавные переходы и управление камерой
+│   │   │   ├── CyberpunkStage.jsx  # Окружение, неоновый пол и освещение
+│   │   │   └── SupraModel.jsx      # Модель авто, материалы и хотспоты
+│   │   ├── hud/                # HUD-интерфейс поверх 3D-сцены
+│   │   │   ├── BottomCustomizer.jsx# Панель кастомизации цветов/деталей
+│   │   │   ├── CameraPresets.jsx   # Переключатель ракурсов камеры
+│   │   │   ├── CinemaOverlay.jsx   # Оверлей кинематографического режима
+│   │   │   ├── Header.jsx          # Шапка, логотип и выбор языка
+│   │   │   ├── QuickTools.jsx      # Быстрые тулы (свет, неон, авто-поворот)
+│   │   │   └── TelemetryHUD.jsx    # Тахометр (RPM), наддув (Boost) и газ
+│   │   └── modals/             # Киберпанк модальные окна
+│   │       ├── HeritageModal.jsx   # История поколений Supra
+│   │       ├── ModelsModal.jsx     # Легендарные спецверсии (RZ, TRD, Top Secret)
+│   │       ├── SummaryModal.jsx    # Паспорт текущей конфигурации
+│   │       └── TuningModal.jsx     # Спецификации двигателя 2JZ-GTE
+│   ├── data/                   # Данные, палитры и переводы
+│   │   ├── colorOptions.js         # Палитры цветов, финиши, хотспоты
+│   │   ├── heritageData.js         # История поколений A40-A90
+│   │   ├── modelsData.js           # Модификации Supra
+│   │   ├── translations.js         # Словари переводов (RU / EN / JA)
+│   │   └── tuningData.js           # ТТХ двигателя и ходовой
+│   ├── hooks/
+│   │   └── useAudioEngine.js   # Хук Web Audio API + физика оборотов/буста
+│   ├── App.jsx                 # Главный корневой компонент-оркестратор
+│   ├── index.css               # Дизайн-система, Cyberpunk UI & Glassmorphism
+│   └── main.jsx                # Точка входа React
+├── index.html                  # HTML-шаблон с подключением шрифтов
+├── package.json                # Зависимости и скрипты
+└── vite.config.js              # Конфигурация сборщика Vite
+```
+
+---
+
+## ⚡ Оптимизация производительности 3D
+
+- **Автоматическая нормализация масштаба**: 3D-модель выравнивается и центрируется по габаритам сцены.
+- **Мутация материалов без лишних ре-рендеров**: обновление цветов кузова, колес и свечения выполняется напрямую через Three.js свойства материалов, обеспечивая стабильные **60+ FPS**.
+- **Кастомные настройки DPR и WebGL**: адаптивный `devicePixelRatio [1, 1.75]` с отключением избыточных буферов трафарета для плавной работы на мобильных устройствах и ноутбуках.
+- **Web Audio Context Caching**: мгновенное воспроизведение звука без задержек сети благодаря предварительному декодированию аудио-буфера.
+
+---
+
+## 📄 Лицензия
+
+Проект распространяется под лицензией **MIT**. Подробности в файле [LICENSE](LICENSE).
+
+---
+
+<div align="center">
+
+Разработано с ❤️ и любовью к JDM культуре • **TOYOTA SUPRA JZA80 2JZ-GTE**
+
+</div>
